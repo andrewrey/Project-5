@@ -309,11 +309,30 @@ template {
 /* ============================================= */
 /*              Base styles                      */
 /* ============================================= */
+* {
+  box-sizing: border-box; }
+
 /* ============================================= */
-/*              Buttons                          */
+/*              Buttons / input                  */
 /* ============================================= */
+section input {
+  display: block;
+  margin: 25px auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px; }
+
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+.photoGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1050px;
+  margin: 0 auto; }
+
+.photoGallery a {
+  margin: 8px; }
 
 /*# sourceMappingURL=styles.css.map */

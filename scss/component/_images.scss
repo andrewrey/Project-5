@@ -1,3 +1,16 @@
 /* ============================================= */
 /*              Images                           */
 /* ============================================= */
+
+.photoGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.photoGallery a {
+  margin: 8px;
+}
+
