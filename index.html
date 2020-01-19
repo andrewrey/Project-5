@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Project-5: jQuery</title>
+  <link rel="stylesheet" href="js/lightbox/css/lightbox.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,45 +16,54 @@
       <input type="text" placeholder="search (16pt)" >
     </section>
     <section class="photoGallery">
-      <div class="photo-link"> 
-        <a href="images/01.jpg"><img src="images//thumbnails/01.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/02.jpg"><img src="images//thumbnails/02.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/03.jpg"><img src="images//thumbnails/03.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/04.jpg"><img src="images//thumbnails/04.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/05.jpg"><img src="images//thumbnails/05.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/06.jpg"><img src="images//thumbnails/06.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/07.jpg"><img src="images//thumbnails/07.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/08.jpg"><img src="images//thumbnails/08.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/09.jpg"><img src="images//thumbnails/09.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/10.jpg"><img src="images//thumbnails/10.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/11.jpg"><img src="images//thumbnails/11.jpg"></a>
-      </div>
-      <div class="photo-link">
-        <a href="images/12.jpg"><img src="images//thumbnails/12.jpg"></a>
+      <div class="wrapper">
+        <div class="photo-link rotate"> 
+          <a href="images/01.jpg" data-lightbox="image" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="images//thumbnails/01.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/02.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/02.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/03.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/03.jpg"></a>
+        </div>
+        <div class="photo-link rotate">
+          <a href="images/04.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/04.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/05.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/05.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/06.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/06.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/07.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/07.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/08.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/08.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/09.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/09.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/10.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/10.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/11.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/11.jpg"></a>
+        </div>
+        <div class="photo-link">
+          <a href="images/12.jpg" data-lightbox="image" data-title=""><img src="images//thumbnails/12.jpg"></a>
+        </div>
       </div>
     </section>
   </main>
   <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/lightbox/js/lightbox.min.js"></script>
+  <script>
+    lightbox.option({
+      'wrapAround':true,
+      'fitImagesInViewport':true
+    })
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -319,11 +319,14 @@ template {
   display: inline-block; }
 
 /* ============================================= */
+/*              lightbox css changes             */
+/* ============================================= */
+/* ============================================= */
 /*              Buttons / input                  */
 /* ============================================= */
 section input {
   display: block;
-  margin: 25px auto;
+  margin: 25px auto 50px;
   padding: 10px;
   width: 100%;
   max-width: 400px; }
@@ -332,19 +335,29 @@ section input {
 /*              Images                           */
 /* ============================================= */
 .photoGallery {
+  perspective: 1000px;
   text-align: center;
   margin: 0 auto;
-  width: 80%; }
+  width: 80%;
+  transform: rotateY(40deg); }
   @media (min-width: 768px) {
     .photoGallery {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      max-width: 1250px; } }
+      max-width: 1250px; }
+      .photoGallery:hover .wrapper {
+        transform: rotate(0); } }
+
+@media (min-width: 768px) {
+  .wrapper {
+    transition: 2s;
+    transform: rotateY(15deg); } }
 
 .photoGallery .photo-link {
   margin: 0px 10px 15px;
-  border: 1px black solid; }
+  border: 1px black solid;
+  box-shadow: 5px 5px 8px; }
 
 .photoGallery img {
   padding: 0;

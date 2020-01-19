@@ -2,24 +2,43 @@
 /*              Images                           */
 /* ============================================= */
 
+
+
+
+
+
 .photoGallery {
+  perspective: 1000px;
   text-align: center;
   margin: 0 auto;
   width: 80%;
+  transform: rotateY(40deg);
   @include mq($med) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1250px;
-    
+    &:hover .wrapper{
+      transform: rotate(0);
+    }
   }
   
+  
+}
+
+.wrapper {
+  @include mq($med) {
+    transition: 2s;
+    transform: rotateY(15deg);
+  }
 }
 
 .photoGallery .photo-link {
   margin: 0px 10px 15px;
   border: 1px black solid;
+  box-shadow: 5px 5px 8px;
 }
+
 
 .photoGallery img {
   padding: 0;
