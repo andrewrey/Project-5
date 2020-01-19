@@ -321,6 +321,21 @@ template {
 /* ============================================= */
 /*              lightbox css changes             */
 /* ============================================= */
+.lb-outerContainer {
+  max-width: 80%;
+  height: auto !important;
+  width: auto !important; }
+
+.lb-container {
+  max-width: 100%;
+  height: auto !important;
+  width: auto !important; }
+
+.lb-image {
+  width: 100%;
+  height: auto !important;
+  width: auto !important; }
+
 /* ============================================= */
 /*              Buttons / input                  */
 /* ============================================= */
