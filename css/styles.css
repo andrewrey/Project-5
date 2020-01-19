@@ -326,11 +326,14 @@ section input {
 /*              Images                           */
 /* ============================================= */
 .photoGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1050px;
-  margin: 0 auto; }
+  text-align: center;
+  margin: 0 auto;
+  width: 80%; }
+  @media (min-width: 768px) {
+    .photoGallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
 
 .photoGallery a {
   margin: 8px; }

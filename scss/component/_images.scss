@@ -3,11 +3,16 @@
 /* ============================================= */
 
 .photoGallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1050px;
+  text-align: center;
   margin: 0 auto;
+  width: 80%;
+  @include mq($med) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
 }
 
 .photoGallery a {
