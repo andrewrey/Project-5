@@ -10,12 +10,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1250px;
     
   }
   
 }
 
-.photoGallery a {
-  margin: 8px;
+.photoGallery .photo-link {
+  margin: 0px 10px 15px;
+  border: 1px black solid;
 }
 
+.photoGallery img {
+  padding: 0;
+  margin: 0;
+  display: block;
+}

@@ -7,3 +7,11 @@
 * {
   box-sizing: border-box;
 }
+
+.photoGallery a {
+  display: block;
+}
+
+.photoGallery div {
+  display: inline-block;
+}

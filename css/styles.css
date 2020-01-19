@@ -312,6 +312,12 @@ template {
 * {
   box-sizing: border-box; }
 
+.photoGallery a {
+  display: block; }
+
+.photoGallery div {
+  display: inline-block; }
+
 /* ============================================= */
 /*              Buttons / input                  */
 /* ============================================= */
@@ -333,9 +339,16 @@ section input {
     .photoGallery {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; } }
+      justify-content: center;
+      max-width: 1250px; } }
 
-.photoGallery a {
-  margin: 8px; }
+.photoGallery .photo-link {
+  margin: 0px 10px 15px;
+  border: 1px black solid; }
+
+.photoGallery img {
+  padding: 0;
+  margin: 0;
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
