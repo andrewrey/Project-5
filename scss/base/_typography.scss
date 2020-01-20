@@ -21,7 +21,7 @@
 /*              lightbox css changes             */
 /* ============================================= */
 
-.lb-outerContainer,{
+.lb-outerContainer, .lb-dataContainer{
   max-width: 80%;
   height: auto !important;
   width: auto !important;
@@ -34,7 +34,21 @@
 }
 
 .lb-image {
-  width: 100%;
+  max-width: 100%;
   height: auto !important;
   width: auto !important;
+}
+
+.lb-nav a.lb-prev {
+  position: absolute;
+  opacity: 1;
+  float: none;
+  left: -60px;
+}
+
+.lb-nav a.lb-next {
+  position: absolute;
+  opacity: 1;
+  float: none;
+  right: -60px;
 }
