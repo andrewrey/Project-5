@@ -383,7 +383,10 @@ section input {
 .photoGallery .photo-link {
   margin: 0px 10px 15px;
   border: 1px black solid;
-  box-shadow: 5px 5px 8px; }
+  box-shadow: 5px 5px 8px;
+  transition: box-shadow 2s; }
+  .photoGallery .photo-link:hover {
+    box-shadow: 8px 8px 10px blue; }
 
 .photoGallery img {
   padding: 0;
