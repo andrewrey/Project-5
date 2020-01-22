@@ -49,11 +49,20 @@
 
 .lb-data .lb {
   &-details{
-    background-color: #76b5e8;
+    background-color: $captext-color-small;
     color: #cfdae3;
+    @include mq($med){
+      background-color: $captext-color-med;
+    }
     & .lb-caption{
       font-size: 1.2rem;
-      font-family: $captext;
+      font-family: $captext-small;
+      @include mq($med) {
+        font-family: $captext-med;
+      }
+      @include mq($lg) {
+        font-family: $captext-large;
+      }
     }
   }
   &-number{

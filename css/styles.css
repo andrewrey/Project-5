@@ -393,9 +393,18 @@ section input {
 .lb-data .lb-details {
   background-color: #76b5e8;
   color: #cfdae3; }
+  @media (min-width: 768px) {
+    .lb-data .lb-details {
+      background-color: #9EADC8; } }
   .lb-data .lb-details .lb-caption {
     font-size: 1.2rem;
     font-family: "Zhi Mang Xing", cursive; }
+    @media (min-width: 768px) {
+      .lb-data .lb-details .lb-caption {
+        font-family: "Shadows Into Light", cursive; } }
+    @media (min-width: 1024px) {
+      .lb-data .lb-details .lb-caption {
+        font-family: "Sacramento", cursive; } }
 .lb-data .lb-number {
   color: #90a0ad;
   font-size: .8rem;
