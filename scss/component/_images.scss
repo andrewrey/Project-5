@@ -12,7 +12,7 @@
   text-align: center;
   margin: 0 auto;
   width: 80%;
-  transform: rotateY(40deg);
+
   @include mq($med) {
     display: flex;
     flex-wrap: wrap;
@@ -49,13 +49,14 @@
 .lb-data .lb {
   &#{"-details"} {
   background-color: #76b5e8;
-  color: black;
+  color: #cfdae3;
   & .lb-caption{
     font-size: 1.2rem;
+    font-family: $captext;
   }
   }
   &#{"-number"}{
-    color: purple;
+    color: #90a0ad;
     font-size: .8rem;
     margin-top: 10px;
   }

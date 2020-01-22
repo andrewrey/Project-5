@@ -365,8 +365,7 @@ section input {
   perspective: 1000px;
   text-align: center;
   margin: 0 auto;
-  width: 80%;
-  transform: rotateY(40deg); }
+  width: 80%; }
   @media (min-width: 768px) {
     .photoGallery {
       display: flex;
@@ -393,11 +392,12 @@ section input {
 
 .lb-data .lb-details {
   background-color: #76b5e8;
-  color: black; }
+  color: #cfdae3; }
   .lb-data .lb-details .lb-caption {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+    font-family: "Zhi Mang Xing", cursive; }
 .lb-data .lb-number {
-  color: purple;
+  color: #90a0ad;
   font-size: .8rem;
   margin-top: 10px; }
 
