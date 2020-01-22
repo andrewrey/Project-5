@@ -391,4 +391,14 @@ section input {
   margin: 0;
   display: block; }
 
+.lb-data .lb-details {
+  background-color: #76b5e8;
+  color: black; }
+  .lb-data .lb-details .lb-caption {
+    font-size: 1.2rem; }
+.lb-data .lb-number {
+  color: purple;
+  font-size: .8rem;
+  margin-top: 10px; }
+
 /*# sourceMappingURL=styles.css.map */
