@@ -20,9 +20,7 @@
     &:hover .wrapper{
       transform: rotate(0);
     }
-  }
-  
-  
+  } 
 }
 
 .wrapper {
@@ -35,11 +33,11 @@
 .photoGallery .photo-link {
   margin: 0px 10px 15px;
   border: 1px black solid;
-  box-shadow: 5px 5px 8px;
+  // box-shadow: 5px 5px 8px;
   transition: box-shadow 2s;
-  &:hover {
-    box-shadow: 8px 8px 10px blue;
-  }
+  // &:hover {
+  //   box-shadow: 8px 8px 10px blue;
+  // }
 }
 
 
@@ -50,15 +48,15 @@
 }
 
 .lb-data .lb {
-  &#{"-details"} {
-  background-color: #76b5e8;
-  color: #cfdae3;
-  & .lb-caption{
-    font-size: 1.2rem;
-    font-family: $captext;
+  &-details{
+    background-color: #76b5e8;
+    color: #cfdae3;
+    & .lb-caption{
+      font-size: 1.2rem;
+      font-family: $captext;
+    }
   }
-  }
-  &#{"-number"}{
+  &-number{
     color: #90a0ad;
     font-size: .8rem;
     margin-top: 10px;

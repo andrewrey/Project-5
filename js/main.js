@@ -8,6 +8,17 @@
   */
 
 
+function randomColor() {
+  let rgbColor = "rgb(";
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+  rgbColor += red + "," +green+ "," +blue +")";
+  return rgbColor
+}
+
+
+
 
 $(".searchInput").on("keyup", function(){
   const $text = $(this).val().toLowerCase();
@@ -24,6 +35,15 @@ $(".searchInput").on("keyup", function(){
 
 });
 
+$('.photo-link').each(function(index, element){
+  $(this).css("box-shadow", "5px 5px 8px");
+});
 
+$(".photo-link").on("mouseover", function(){
+  $(this).css("box-shadow", "10px 10px 12px " + randomColor());
+});
     
-  
+$(".photo-link").on("mouseout", function(){
+  $(this).css("box-shadow", "5px 5px 8px");
+
+});
