@@ -54,6 +54,9 @@
     @include mq($med){
       background-color: $captext-color-med;
     }
+    @include mq($lg){
+      padding-top: 10px;
+    }
     & .lb-caption{
       font-size: 1.2rem;
       font-family: $captext-small;
@@ -62,6 +65,7 @@
       }
       @include mq($lg) {
         font-family: $captext-large;
+        font-size: 1.5rem;
       }
     }
   }
