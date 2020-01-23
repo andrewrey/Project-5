@@ -4,7 +4,8 @@
 
 
 @mixin mq ($bp){
-  @media (min-width: $bp) {
+  $value: map-get($map: $media-breaks, $key:$bp )
+  @media (min-width: $value) {
     @content;
   }
 
