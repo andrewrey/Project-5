@@ -12,7 +12,7 @@
   text-align: center;
   margin: 0 auto;
   width: 80%;
-  @include mq($med) {
+  @include mq(med) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -24,7 +24,7 @@
 }
 
 .wrapper {
-  @include mq($med) {
+  @include mq(med) {
     transition: 2s;
     transform: rotateY(15deg);
   }
@@ -51,19 +51,19 @@
   &-details{
     background-color: $captext-color-small;
     color: #cfdae3;
-    @include mq($med){
+    @include mq(med){
       background-color: $captext-color-med;
     }
-    @include mq($lg){
+    @include mq(lg){
       padding-top: 10px;
     }
     & .lb-caption{
       font-size: 1.2rem;
       font-family: $captext-small;
-      @include mq($med) {
+      @include mq(med) {
         font-family: $captext-med;
       }
-      @include mq($lg) {
+      @include mq(lg) {
         font-family: $captext-large;
         font-size: 1.5rem;
       }

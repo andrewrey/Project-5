@@ -3,10 +3,9 @@
 /* ============================================= */
 
 
-@mixin mq ($bp){
-  $value: map-get($map: $media-breaks, $key:$bp )
+@mixin mq($bp){
+  $value: map-get($map: $media-breaks, $key:$bp );
   @media (min-width: $value) {
     @content;
   }
-
 }
